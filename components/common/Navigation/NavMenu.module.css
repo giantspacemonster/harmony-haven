@@ -1,0 +1,38 @@
+.menu {
+    text-align: right;
+    z-index: 2;
+}
+.menu ul {
+  font-weight: bold;
+  display: flex;
+  list-style: none;
+  gap: 64px;
+}
+.menu ul li:hover {
+  color: var(--maize);
+  border-bottom: 1px solid var(--maize);
+  transition: 0.3s ease-out;
+}
+
+@media only screen and (max-width: 1024px) {
+  .menu {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 587px) {
+  .menu ul {
+    display: block;
+    position: absolute;
+    right: 12px;
+    padding: 12px;
+    top: 32px;
+    background-color: var(--white);
+    color: var(--eerie-black);
+    border: 1px solid red;
+  }
+  .menu ul li {
+    padding: 4px 0 4px 0;
+    width: 96px;
+    border-bottom: 1px solid var(--maize);
+  }
+}

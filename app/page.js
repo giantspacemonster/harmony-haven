@@ -1,95 +1,96 @@
-import Image from "next/image";
+"use client";
+import Container from "@/components/ui/Container/Container";
 import styles from "./page.module.css";
-
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+    <main>
+      {/* 92vh only for first page container because Navbar takes 8 vh */}
+      <Container backgroundColor="var(--alabaster)" minHeight="92vh">
+        <img
+          src="/concert.jpg" // do web image optimization or pay the price with your soul
+          className={styles.bgImg}
         />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+        <div className={styles.introContent}>
+          <div className={styles.introSubContent1}>
+            <div>
+              <img src="/logo.svg" className={styles.introLogo} />
+            </div>
+            <div className={styles.subContent1}>
+              <div
+                className={`${styles.subContent1Item} ${styles.subContentItem}`}
+              >
+                <div className={styles.subContent1Layout}>
+                  <div className={styles.subContentDate}>
+                    <p>09</p>
+                    <p>April</p>
+                  </div>
+                  <hr />
+                  <p>CU E1 211</p>
+                </div>
+              </div>
+              <div
+                className={`${styles.subContent2Item} ${styles.subContentItem}`}
+              >
+                <div className={styles.subContent1Layout}>
+                  <div className={styles.subContentDate}>
+                    <p>12</p>
+                    <p>April</p>
+                  </div>
+                  <hr />
+                  <p>CU E1 407</p>
+                </div>
+              </div>
+              <div
+                className={`${styles.subContent3Item} ${styles.subContentItem}`}
+              >
+                <div className={styles.subContent1Layout}>
+                  <div className={styles.subContentDate}>
+                    <p>24</p>
+                    <p>April</p>
+                  </div>
+                  <hr />
+                  <p>CU E1 401</p>
+                </div>
+              </div>
+              <div
+                className={`${styles.subContent4Item} ${styles.subContentItem}`}
+              >
+                <div className={styles.subContent1Layout}>
+                  <div className={styles.subContentDate}>
+                    <p>28</p>
+                    <p>April</p>
+                  </div>
+                  <hr />
+                  <p>CU E1 408</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p className={styles.subContent2}>
+              <span style={{ fontSize: "2em" }}>Live @ CU</span>
+              <br />
+              <span style={{ fontSize: "1em" }}>You're Invited</span>
+              <br />
+              <button
+                type="button"
+                style={{
+                  border: "none",
+                  padding: "12px 24px 12px 24px",
+                  fontSize: "1em",
+                  cursor: "pointer",
+                  borderRadius: "12px",
+                }}
+              >
+                Book your seat Now
+              </button>
+            </p>
+          </div>
+        </div>
+      </Container>
+      {/* <Container backgroundColor="var(--licorice)" minHeight="100vh">
+        <div>Hello World</div>
+      </Container> */}
     </main>
   );
 }
