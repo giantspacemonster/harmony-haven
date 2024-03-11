@@ -10,6 +10,7 @@ export default function Events() {
         <img
           src="/concert.jpg" // do web image optimization or pay the price with your soul
           className={styles.bgImg}
+          alt="background"
         />
         <div className={styles.events}>
           <div
@@ -19,7 +20,7 @@ export default function Events() {
               router.push("/event1");
             }}
           >
-            <img src="/mini/lights.jpg" />
+            <img src="/mini/lights.jpg" alt="background" />
             <p
               style={{
                 padding: "12px",
@@ -39,7 +40,7 @@ export default function Events() {
               router.push("/event2");
             }}
           >
-            <img src="/mini/jazz.jpg" />
+            <img src="/mini/jazz.jpg" alt="background" />
             <p
               style={{
                 padding: "12px",
@@ -60,7 +61,7 @@ export default function Events() {
               router.push("/event3");
             }}
           >
-            <img src="/mini/mike.jpg" />
+            <img src="/mini/mike.jpg" alt="background" />
             <p
               style={{
                 padding: "12px",
@@ -83,7 +84,7 @@ export default function Events() {
               router.push("/event4");
             }}
           >
-            <img src="/mini/neon.jpg" />
+            <img src="/mini/neon.jpg" alt="background" />
             <p
               style={{
                 padding: "12px",
@@ -93,7 +94,7 @@ export default function Events() {
               Immerse yourself in the vibrant energy of Neon Nights. Join us for
               a night of pulsating beats, neon hues, and an electrifying
               atmosphere. Step into a world where music and lights converge for
-              an unforgettable experience in the heart of the city's neon-lit
+              an unforgettable experience in the heart of the neon-lit city
               playground.
             </p>
           </div>

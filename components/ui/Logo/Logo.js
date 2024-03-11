@@ -27,7 +27,7 @@ export default function Logo() {
         router.push("/");
       }}
     >
-      <img src="/logo.svg" width={48} height={48} />
+      <img src="/logo.svg" width={48} height={48} alt="HarmonyHaven" />
       {display ? <p>Harmony Haven</p> : null}
     </div>
   );

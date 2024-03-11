@@ -44,6 +44,7 @@ export default function NavMenu() {
         </ul>
       ) : (
         <img
+          alt="menu"
           src="/barmenu.svg"
           width={32}
           height={32}
@@ -55,6 +56,7 @@ export default function NavMenu() {
       )}
       {menuClicked ? (
         <img
+          alt="close"
           src="/cross.svg"
           width={32}
           height={32}

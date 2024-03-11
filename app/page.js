@@ -3,7 +3,7 @@ import Container from "@/components/ui/Container/Container";
 import styles from "./page.module.css";
 import { useRouter } from "next/navigation";
 export default function Home() {
-  const router = useRouter()
+  const router = useRouter();
   return (
     <main>
       {/* 92vh only for first page container because Navbar takes 8 vh */}
@@ -11,6 +11,7 @@ export default function Home() {
         <img
           src="/concert.jpg" // do web image optimization or pay the price with your soul
           className={styles.bgImg}
+          alt="background"
         />
         <div className={styles.introContent}>
           <div className={styles.introSubContent1}>
@@ -84,7 +85,7 @@ export default function Home() {
                   borderRadius: "12px",
                 }}
                 onClick={() => {
-                  router.push('/booking')
+                  router.push("/booking");
                 }}
               >
                 Book your seat Now

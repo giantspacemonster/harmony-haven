@@ -35,7 +35,7 @@ export default function ImageModal({
           </div>
         </div>
         <p className={styles.close_info}>
-          <img src="/cross.svg" width={10} /> &nbsp; &nbsp;Click
+          <img src="/cross.svg" width={10} alt="cross"/> &nbsp; &nbsp;Click
           Anywhere to Close
         </p>
       </div>

@@ -7,6 +7,7 @@ export default function Booking() {
         <img
           src="/concert.jpg" // do web image optimization or pay the price with your soul
           className={styles.bgImg}
+          alt="background"
         />
         <div
           style={{

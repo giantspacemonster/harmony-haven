@@ -7,10 +7,11 @@ export default function Jazz() {
         <img
           src="/concert.jpg" // do web image optimization or pay the price with your soul
           className={styles.bgImg}
+          alt="background"
         />
         <div className={styles.events}>
           <div className={styles.eventdesc} id="event2">
-            <img src="/mini/jazz.jpg" />
+            <img src="/mini/jazz.jpg" alt="background" />
             <p
               style={{
                 padding: "12px",

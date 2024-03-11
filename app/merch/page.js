@@ -1,5 +1,5 @@
 import Container from "@/components/ui/Container/Container";
-import styles from './page.module.css'
+import styles from "./page.module.css";
 export default function Merch() {
   return (
     <main>
@@ -7,6 +7,7 @@ export default function Merch() {
         <img
           src="/concert.jpg" // do web image optimization or pay the price with your soul
           className={styles.bgImg}
+          alt="background"
         />
       </Container>
     </main>

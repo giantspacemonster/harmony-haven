@@ -7,10 +7,11 @@ export default function Lights() {
         <img
           src="/concert.jpg" // do web image optimization or pay the price with your soul
           className={styles.bgImg}
+          alt="background"
         />
         <div className={styles.events}>
           <div className={styles.eventdesc} id="event1">
-            <img src="/mini/lights.jpg" />
+            <img src="/mini/lights.jpg" alt="background" />
             <p
               style={{
                 padding: "12px",

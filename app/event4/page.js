@@ -7,10 +7,11 @@ export default function Neon() {
         <img
           src="/concert.jpg" // do web image optimization or pay the price with your soul
           className={styles.bgImg}
+          alt="background"
         />
         <div className={styles.events}>
           <div className={styles.eventdesc} id="event1">
-            <img src="/mini/neon.jpg" />
+            <img src="/mini/neon.jpg" alt="background" />
             <p
               style={{
                 padding: "12px",
