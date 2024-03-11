@@ -1,0 +1,39 @@
+.image_card {
+  margin: 6px;
+  background-color: var(--white-smoke);
+  width: 100%;
+  height: 56vh;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 8px var(--licorice);
+}
+.image_modal_container {
+  background-color: var(--white-smoke);
+  height: 100%;
+  padding: 6px 6px 0 6px;
+  border-radius: 8px 8px 0 0;
+}
+.image_info {
+  height: 20vh;
+  padding: 6px;
+  color: var(--licorice);
+  text-shadow: 1px 1px var(--yellow-green);
+}
+.image_info_heading {
+  text-align: center;
+  font-size: 24px;
+  font-variant: small-caps;
+  text-decoration: underline;
+  text-decoration-color: var(--rojo);
+}
+.image_info_desc {
+  text-align: justify;
+  text-shadow: "none";
+  font-weight: lighter;
+  padding: 6px;
+  height: 4vh;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

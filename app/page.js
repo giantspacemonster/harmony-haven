@@ -1,7 +1,9 @@
 "use client";
 import Container from "@/components/ui/Container/Container";
 import styles from "./page.module.css";
+import { useRouter } from "next/navigation";
 export default function Home() {
+  const router = useRouter()
   return (
     <main>
       {/* 92vh only for first page container because Navbar takes 8 vh */}
@@ -80,6 +82,9 @@ export default function Home() {
                   fontSize: "1em",
                   cursor: "pointer",
                   borderRadius: "12px",
+                }}
+                onClick={() => {
+                  router.push('/booking')
                 }}
               >
                 Book your seat Now

@@ -13,52 +13,53 @@
   --timberwolf: #d1d1d1;
   --lavender: #eeeeff;
   --white: #fefcfb;
-  --papaya-whip: #FFF1D0;
-  --anit-flash-white: #EFF1F3;
-  --mint-cream: #F7FFF6;
+  --papaya-whip: #fff1d0;
+  --anit-flash-white: #eff1f3;
+  --mint-cream: #f7fff6;
 
   /* Nox */
   --english-viotel: #3f3244;
   --eerie-black: #171d1c;
-  --oxford-blue: #0C1B33;
+  --oxford-blue: #0c1b33;
   --charcoal: #394053;
   --jet: #363635;
+  --darkjet: rgba(23, 23, 23, 0.9);
   --licorice: #220901;
 
   /* Pop */
   --web-orange: #fcab10;
-  --jonquil: #F0C808;
-  --maize: #FCEC52;
-  --yellow-green: #ADE25D;
-  --rojo: #DD1C1A;
-  --rust: #BC3908;
-  --penn-red: #941B0C;
-  --poppy: #DF2935;
-  --sun-glow: #FDCA40;
-  --crayola-blue: #3772FF;
-  --raspberry: #DD1155;
+  --jonquil: #f0c808;
+  --maize: #fcec52;
+  --yellow-green: #ade25d;
+  --rojo: #dd1c1a;
+  --rust: #bc3908;
+  --penn-red: #941b0c;
+  --poppy: #df2935;
+  --sun-glow: #fdca40;
+  --crayola-blue: #3772ff;
+  --raspberry: #dd1155;
   --persian-red: #bb4430;
 
   /* Pastel */
-  --olivine: #B2BD7E;
-  --jasmine: #FFEE88;
+  --olivine: #b2bd7e;
+  --jasmine: #ffee88;
   --melon: #f4b9b2;
-  --mustard: #FED766;
-  --lilght-orange: #F5CDA7;
-  --atomic-tangerine: #F5CDA7;
+  --mustard: #fed766;
+  --lilght-orange: #f5cda7;
+  --atomic-tangerine: #f5cda7;
   --tea-green: #daedbd;
   --burnt-sienna: #de6b48;
   --vanilla: #dcdba8;
-  --khaki: #B2AA8E;
-  --coffee: #81523F;
-  --coral: #FF8360;
-  --flax: #E8E288;
-  --mantis: #7DCE82;
-  --turquoise: #3CDBD3;
-  --ultra-violet: #5D5179;
-  --periwinkle: #B8B8FF;
-  --antique-white: #FFEEDD;
-  --apricot: #FFD8BE;
+  --khaki: #b2aa8e;
+  --coffee: #81523f;
+  --coral: #ff8360;
+  --flax: #e8e288;
+  --mantis: #7dce82;
+  --turquoise: #3cdbd3;
+  --ultra-violet: #5d5179;
+  --periwinkle: #b8b8ff;
+  --antique-white: #ffeedd;
+  --apricot: #ffd8be;
 }
 body {
   padding: 0;
@@ -67,4 +68,88 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+/* pagination styling */
+.pagination {
+  width: 92vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  color: var(--lavender);
+  padding: 6px;
+}
+
+.active .page-link {
+  color: var(--white);
+  font-weight: bolder;
+  padding: 6px 48px 6px 48px;
+  background-color: var(--rojo);
+}
+
+.page-item {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  height: 3vh;
+  background-color: var(--oxford-blue);
+  padding: 6px 24px 6px 24px;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+}
+
+.page-link {
+  z-index: 0;
+
+  cursor: pointer;
+  height: 3vh;
+  background-color: var(--persian-red);
+  padding: 6px 32px 6px 32px;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+}
+
+.page-item:hover {
+  color: var(--celestial-blue);
+  text-decoration: underline;
+  text-decoration-color: var(--amber);
+}
+
+.page-link:hover {
+  color: var(--celestial-blue);
+  text-decoration: underline;
+  text-decoration-color: var(--amber);
+}
+@media only screen and (max-width: 578px) {
+  .pagination {
+    width: 96vw;
+    flex-wrap: wrap;
+  }
+
+  .page-item {
+    text-align: center;
+    font-size: 12px;
+    padding: 6px;
+    width: 48px;
+    border-radius: 8px;
+    height: auto;
+  }
+
+  .page-link {
+    font-size: 12px;
+    padding: 6px 12px 6px 12px;
+    border-radius: 8px;
+  }
+
+  .active .page-link {
+    padding: 6px 18px 6px 18px;
+  }
+}
+
+.open {
+  animation: appear 0.4s ease-in;
+}
+
+.close {
+  animation: disappear 0.4s ease-in;
 }

@@ -1,0 +1,18 @@
+.gallery_layout {
+    color: var(--white-smoke);
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    gap: 12px;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 578px) {
+    .gallery_layout {
+        margin-left: auto;
+        margin-right: auto;
+        width: 92vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
