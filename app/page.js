@@ -73,7 +73,7 @@ export default function Home() {
             <p className={styles.subContent2}>
               <span style={{ fontSize: "2em" }}>Live @ CU</span>
               <br />
-              <span style={{ fontSize: "1em" }}>You're Invited</span>
+              <span style={{ fontSize: "1em" }}>You are Invited</span>
               <br />
               <button
                 type="button"
